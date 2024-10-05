@@ -1,21 +1,134 @@
-/* Custom sidebar styles */
-#wrapper.toggled #sidebar-wrapper {
-    margin-left: -250px;
-}
-
-#sidebar-wrapper {
-    width: 250px;
-    height: 100%;
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
 }
 
 #wrapper {
-    padding-left: 250px;
+    display: flex;
+    align-items: stretch;
 }
 
-.sidebar-heading {
+/* Sidebar */
+#sidebar-wrapper {
+    width: 250px;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #343a40;
+    text-align: center;
+}
+
+#sidebar-wrapper .list-group-item {
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+}
+
+#sidebar-wrapper .list-group-item:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Page Content */
+#page-content-wrapper {
+    width: 100%;
+    padding: 2rem;
+}
+
+.navbar {
     padding: 1rem;
 }
 
-.list-group-item {
-    padding: 1rem;
+.navbar .dropdown-menu {
+    min-width: 200px;
 }
+
+.container-fluid {
+    margin-top: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border-radius: 0.25rem;
+}
+
+button {
+    border-radius: 0.25rem;
+}
+
+/* Sidebar Toggle */
+#menu-toggle {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+#menu-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Action Buttons */
+button.btn {
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown Profile Styling */
+.dropdown-menu a {
+    font-size: 0.9rem;
+    color: #212529;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu .dropdown-divider {
+    margin: 0.5rem 0;
+}
+
+.dropdown-menu .text-muted {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
