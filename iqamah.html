@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqamah and Jumah Settings</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="iqamah.css"> <!-- Optional external CSS for custom styles -->
+</head>
+<body>
+
+<div class="container mt-4">
+    <!-- Tab Navigation -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="iqamah-tab" data-toggle="tab" href="#iqamah" role="tab" aria-controls="iqamah" aria-selected="true">Iqamah</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="jumah-tab" data-toggle="tab" href="#jumah" role="tab" aria-controls="jumah" aria-selected="false">Jumah</a>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content mt-3" id="myTabContent">
+        <!-- Iqamah Section -->
+        <div class="tab-pane fade show active" id="iqamah" role="tabpanel" aria-labelledby="iqamah-tab">
+            <h2>Iqamah</h2>
+            <p class="text-muted">Set Iqamah Minutes</p>
+            
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="fajrIqamah">Minutes to Fajr Iqamah</label>
+                        <input type="number" class="form-control" id="fajrIqamah" value="15">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="duhrIqamah">Minutes to Dhuhr Iqamah</label>
+                        <input type="number" class="form-control" id="duhrIqamah" value="30">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="asrIqamah">Minutes to Asr Iqamah</label>
+                        <input type="number" class="form-control" id="asrIqamah" value="20">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="maghribIqamah">Minutes to Maghrib Iqamah</label>
+                        <input type="number" class="form-control" id="maghribIqamah" value="3">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="ishaIqamah">Minutes to Isha Iqamah</label>
+                        <input type="number" class="form-control" id="ishaIqamah" value="20">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+
+        <!-- Jumah Section -->
+        <div class="tab-pane fade" id="jumah" role="tabpanel" aria-labelledby="jumah-tab">
+            <h2>Jumah</h2>
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Jumah Adhan</th>
+                        <th scope="col">Minutes to Jumah Iqamah</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12:30</td>
+                        <td>30</td>
+                        <td>
+                            <button class="btn btn-success">Edit</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

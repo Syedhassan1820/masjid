@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #495057;
+}
+
+p.text-muted {
+    font-size: 0.9rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.table {
+    background-color: white;
+}
+
+.btn-primary {
+    background-color: #17a2b8;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+/* Additional styles for nav-tabs (optional) */
+.nav-tabs .nav-link.active {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.nav-tabs .nav-link {
+    color: #495057;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
