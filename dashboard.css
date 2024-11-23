@@ -8,38 +8,39 @@ body {
     display: flex;
     align-items: stretch;
 }
-/* Base sidebar styles */
+
+/* Sidebar base styles */
 #sidebar-wrapper {
-    width: 60px; /* Collapsed width */
+    width: 60px;
     transition: width 0.3s ease;
     overflow: hidden;
     white-space: nowrap;
-    background-color: #343a40; /* Dark background */
+    background-color: #343a40;
     height: 100vh;
 }
 
 #sidebar-wrapper.expanded {
-    width: 250px; /* Expanded width */
+    width: 250px;
 }
 
-/* List group item styling */
+/* Sidebar items */
 #sidebar-wrapper .list-group-item {
     border: none;
     text-align: left;
 }
 
 #sidebar-wrapper .list-group-item i {
-    font-size: 18px; /* Icon size */
+    font-size: 18px;
     margin-right: 10px;
 }
 
 /* Hide text when collapsed */
 #sidebar-wrapper .list-group-item span {
-    display: none; /* Hide text */
+    display: none;
 }
 
 #sidebar-wrapper.expanded .list-group-item span {
-    display: inline; /* Show text when expanded */
+    display: inline;
 }
 
 /* Hover effect */
@@ -48,29 +49,17 @@ body {
     cursor: pointer;
 }
 
-/* Sidebar 
-#sidebar-wrapper {
-    width: 250px;
-}
-
-#sidebar-wrapper .sidebar-heading {
-    padding: 1rem;
-    font-size: 1.2rem;
-    background-color: #343a40;
-    text-align: center;
-}
-
-#sidebar-wrapper .list-group-item {
-    padding: 1rem;
-    border: none;
-    font-size: 1rem;
-}
-
-#sidebar-wrapper .list-group-item:hover {
+/* Sidebar Toggle Button */
+#menu-toggle {
     background-color: #007bff;
+    border-color: #007bff;
     color: white;
 }
-*/
+
+#menu-toggle:hover {
+    background-color: #0056b3;
+}
+
 /* Page Content */
 #page-content-wrapper {
     width: 100%;
@@ -79,10 +68,6 @@ body {
 
 .navbar {
     padding: 1rem;
-}
-
-.navbar .dropdown-menu {
-    min-width: 200px;
 }
 
 .container-fluid {
@@ -110,21 +95,9 @@ button {
     border-radius: 0.25rem;
 }
 
-/* Sidebar Toggle */
-#menu-toggle {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: white;
-}
-
-#menu-toggle:hover {
-    background-color: #0056b3;
-}
-
-/* Action Buttons */
+/* Buttons */
 button.btn {
     margin-right: 0.5rem;
-    font-size: 0.875rem;
 }
 
 .btn-primary {
@@ -152,7 +125,7 @@ button.btn {
     background-color: #0056b3;
 }
 
-/* Dropdown Profile Styling */
+/* Dropdown styling */
 .dropdown-menu a {
     font-size: 0.9rem;
     color: #212529;
@@ -170,4 +143,3 @@ button.btn {
     font-size: 0.8rem;
     color: #6c757d;
 }
-
