@@ -8,8 +8,47 @@ body {
     display: flex;
     align-items: stretch;
 }
+/* Base sidebar styles */
+#sidebar-wrapper {
+    width: 60px; /* Collapsed width */
+    transition: width 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #343a40; /* Dark background */
+    height: 100vh;
+}
 
-/* Sidebar */
+#sidebar-wrapper.expanded {
+    width: 250px; /* Expanded width */
+}
+
+/* List group item styling */
+#sidebar-wrapper .list-group-item {
+    border: none;
+    text-align: left;
+}
+
+#sidebar-wrapper .list-group-item i {
+    font-size: 18px; /* Icon size */
+    margin-right: 10px;
+}
+
+/* Hide text when collapsed */
+#sidebar-wrapper .list-group-item span {
+    display: none; /* Hide text */
+}
+
+#sidebar-wrapper.expanded .list-group-item span {
+    display: inline; /* Show text when expanded */
+}
+
+/* Hover effect */
+#sidebar-wrapper .list-group-item:hover {
+    background-color: #495057;
+    cursor: pointer;
+}
+
+/* Sidebar 
 #sidebar-wrapper {
     width: 250px;
 }
@@ -31,7 +70,7 @@ body {
     background-color: #007bff;
     color: white;
 }
-
+*/
 /* Page Content */
 #page-content-wrapper {
     width: 100%;
