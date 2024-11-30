@@ -34,7 +34,7 @@ body {
 }
 
 #sidebar-wrapper.expanded #sidebar-logo {
-    width: 60px; /* Slightly larger for expanded state */
+    width: 100px; /* Slightly larger for expanded state */
 }
 
 #sidebar-title {
@@ -56,7 +56,7 @@ body {
 }
 
 #sidebar-wrapper .list-group-item i {
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 10px;
 }
 
