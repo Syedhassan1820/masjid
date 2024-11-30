@@ -119,11 +119,15 @@ form {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 #logoPreview {
-    max-width: 200px;
-    max-height: 200px;
+    width: 150px;
+    height: 150px;
     border: 2px solid #ddd;
     border-radius: 5px;
-    display: none; /* Hidden by default */
+    object-fit: cover; /* Ensures the image scales proportionally */
+}
+
+#changeLogoBtn {
+    margin-top: 10px;
 }
 
 .form-control {
