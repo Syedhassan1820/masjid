@@ -26,10 +26,15 @@ body {
     background-color: #212529;
 }
 
-#sidebar-logo.mr-2 {
-    height: 40px;
-    width: 40px;
-    transition: all 0.3s ease;
+#sidebar-logo {
+    width: 40px; /* Adjust width for a smaller logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some spacing to the right */
+    transition: width 0.3s ease; /* Smooth resizing */
+}
+
+#sidebar-wrapper.expanded #sidebar-logo {
+    width: 60px; /* Slightly larger for expanded state */
 }
 
 #sidebar-title {
