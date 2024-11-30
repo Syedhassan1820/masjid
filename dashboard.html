@@ -12,7 +12,10 @@
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper" class="bg-dark">
-            <div class="sidebar-heading text-light">MY MASJID</div>
+            <div class="sidebar-heading d-flex align-items-center text-light p-3">
+                <img src="logo.png" alt="Logo" id="sidebar-logo" class="mr-2">
+                <span id="sidebar-title">MY MASJID</span>
+            </div>
             <div class="list-group list-group-flush">
                 <a href="dashboard.html" class="list-group-item list-group-item-action bg-dark text-light">
                     <i class="fas fa-mosque"></i> <span>Masjid</span>
@@ -152,7 +155,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="dashboard.js"></script>
     <script>
-        // Sidebar toggle functionality
+    // Sidebar toggle functionality
 document.getElementById("menu-toggle").addEventListener("click", function () {
     const sidebar = document.getElementById("sidebar-wrapper");
     sidebar.classList.toggle("expanded");
